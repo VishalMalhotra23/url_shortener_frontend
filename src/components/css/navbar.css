@@ -39,6 +39,10 @@
 .nav-link {
   cursor: pointer;
 }
+.nav-link {
+  cursor: pointer;
+}
+
 .nav-link:hover {
   text-decoration: underline;
 }

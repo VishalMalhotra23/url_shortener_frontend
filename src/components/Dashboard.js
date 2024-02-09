@@ -11,14 +11,13 @@ const Dashboard = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedUrl, setSelectedUrl] = useState(null);
 
-  const authToken = Cookies.get("token");
-
   useEffect(() => {
     fetchUrls();
   }, []);
 
   const fetchUrls = async () => {
     try {
+      const authToken = Cookies.get("token");
       const response = await axios.get(`${API}/url`, {
         headers: {
           Authorization: `Bearer ${authToken}`,
@@ -31,8 +30,8 @@ const Dashboard = () => {
   };
 
   const handleDelete = async (id) => {
-    const authToken = Cookies.get("token");
     try {
+      const authToken = Cookies.get("token");
       await axios.delete(`${API}/url/${id}`, {
         headers: {
           Authorization: `Bearer ${authToken}`,
@@ -46,6 +45,7 @@ const Dashboard = () => {
 
   const handleShortUrlClick = async (shortUrl, id) => {
     try {
+      const authToken = Cookies.get("token");
       const response = await axios.get(`${API}/url/${shortUrl}`, {
         headers: {
           Authorization: `Bearer ${authToken}`,

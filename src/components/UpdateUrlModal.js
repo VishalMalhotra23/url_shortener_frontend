@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
-import axios from "axios";
 import "../components/css/updateurl.css";
-import { API } from "../backend";
-import Cookies from "js-cookie";
 
 const UpdateUrlModal = ({ url, urls, setUrls, handleClose, handleUpdate }) => {
   const [newOriginalUrl, setNewOriginalUrl] = useState(url.originalUrl);

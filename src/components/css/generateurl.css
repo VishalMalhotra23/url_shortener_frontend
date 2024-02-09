@@ -1,0 +1,65 @@
+.generate-url-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.generate-url-container h2 {
+  margin-bottom: 1rem;
+}
+
+.generate-url-container form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.generate-url-container input {
+  flex: 1;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.generate-url-container button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.generate-url-container button:hover {
+  background-color: #0056b3;
+}
+
+.short-url-card {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.short-url-card p {
+  margin: 0;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+}
+
+.short-url-label {
+  display: inline;
+  font-weight: bold;
+}
+
+.short-url {
+  display: inline;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+}

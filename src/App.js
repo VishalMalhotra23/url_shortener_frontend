@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  BrowserRouter,
-} from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Signup from "./components/Signup";
 import Signin from "./components/Signin";
 import GenerateUrl from "./components/GenerateUrl";
